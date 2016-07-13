@@ -8,7 +8,7 @@
 	font-style: normal;
 }
 body {
-  background: url(../img/background.png) no-repeat center center fixed;
+  background: url(../img/background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -30,11 +30,9 @@ body {
   overflow: hidden;
 }
 .menu {
-  display: table-cell;
+  display: inline-block;
   height: 36px;
-  vertical-align: bottom;
-  padding-left: 13px;
-  padding-right: 14px;
+  padding: 19px 14px 0 13px;
   text-decoration: none;
   color: #60b5ed;
 }
@@ -79,15 +77,13 @@ body {
   color: white;
 }
 .wrapper {
-  height: calc(100vh - 38px);
-  position: relative;
   font-family: HelveticaNeue, Tahoma, sans-serif;
 }
 .main {
   height: 613px;
   width: 560px;
   position: absolute;
-  top: 50%;
+  top: 355px;
   left: 50%;
   margin-left: -280px;
   margin-top: -306.5px;
@@ -115,9 +111,44 @@ body {
   width: 276px;
   height: 35px;
   margin-left: 19px;
-  background-color: rgba(0,0,0,0);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: HelveticaNeue;
   border: none;
-  background-image: url(../img/fb.png);
+  background: -moz-linear-gradient(top, #40589e 0%, #344164 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #40589e), color-stop(100%, #344164));
+  background: -webkit-linear-gradient(top, #40589e 0%, #344164 100%);
+  background: -o-linear-gradient(top, #40589e 0%, #344164 100%);
+  background: -ms-linear-gradient(top, #40589e 0%, #344164 100%);
+  background: linear-gradient(to bottom, #40589e 0%, #344164 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40589e', endColorstr='#344164', GradientType=0 );
+  /*-webkit-box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.75);*/
+border-radius: 3px;
+border-top: 1px solid #758ab7;
+}
+.fb:before {
+  margin-top: -0.7px;
+  content: "f";
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  line-height: 33.5px;
+  display: inline-block;
+  float: left;
+  width: 20px;
+  height: 33.5px;
+  padding-right: 5px;
+  -webkit-box-shadow: 1px 0px 1px 0px rgba(50,77,144,1);
+  -moz-box-shadow: 1px 0px 1px 0px rgba(50,77,144,1);
+  box-shadow: 1px 0px 1px 0px rgba(50,77,144,1);
+  border-right: 1px solid #213c71;
+}
+.fb>span {
+  font-weight: normal;
 }
 .ou {
   font-family: HelveticaNeue, Tahoma, sans-serif;
