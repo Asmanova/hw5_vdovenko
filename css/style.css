@@ -92,12 +92,15 @@ body {
 }
 .wrapper {
   font-family: HelveticaNeue, Tahoma, sans-serif;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 .main {
   height: 613px;
   width: 560px;
   position: absolute;
-  top: 355px;
+  top: 50%;
   left: 50%;
   margin-left: -280px;
   margin-top: -306.5px;
